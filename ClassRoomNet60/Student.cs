@@ -18,6 +18,9 @@ namespace ClassRoomNet60
             if (birthmonth > 0 && birthmonth < 13)
             {
                 BirthMonth = birthmonth;
+            } else
+            {
+                throw new ArgumentOutOfRangeException("birthmonth", "Birthmonth must be between 1 and 12");
             }
 
             Birthday = birthday;
