@@ -16,5 +16,13 @@ namespace ClassRoomNet60
         {
             
         }
+
+        public void SeasonSum()
+        {
+            Console.WriteLine("Students born in winter: " + StudentList.FindAll(x => x.Season() == "Winter").Count());
+            Console.WriteLine("Students born in spring: " + StudentList.FindAll(x => x.Season() == "Spring").Count());
+            Console.WriteLine("Students born in summer: " + StudentList.FindAll(x => x.Season() == "Summer").Count());
+            Console.WriteLine("Students born in autumn: " + StudentList.FindAll(x => x.Season() == "Autumn").Count());
+        }
     }
 }

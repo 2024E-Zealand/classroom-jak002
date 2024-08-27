@@ -13,3 +13,5 @@ foreach(Student student in dat3b.StudentList)
 {
     Console.WriteLine($"\t {student.Name}, born {student.Birthday}/{student.BirthMonth}");
 }
+
+dat3b.SeasonSum();
