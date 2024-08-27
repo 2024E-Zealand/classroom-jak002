@@ -15,7 +15,11 @@ namespace ClassRoomNet60
         public Student(string name, int birthmonth, int birthday)
         {
             Name = name;
-            BirthMonth = birthmonth;
+            if (birthmonth > 0 && birthmonth < 13)
+            {
+                BirthMonth = birthmonth;
+            }
+
             Birthday = birthday;
         }
 
@@ -31,6 +35,8 @@ namespace ClassRoomNet60
                     return "Summer";
                 case 9 or 10 or 11:
                     return "Autumn";
+                case 0:
+                    return "Error";
             }
             return "Salt and pepper mostly";
         }

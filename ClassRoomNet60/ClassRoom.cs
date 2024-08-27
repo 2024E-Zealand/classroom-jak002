@@ -23,6 +23,7 @@ namespace ClassRoomNet60
             Console.WriteLine("Students born in spring: " + StudentList.FindAll(x => x.Season() == "Spring").Count());
             Console.WriteLine("Students born in summer: " + StudentList.FindAll(x => x.Season() == "Summer").Count());
             Console.WriteLine("Students born in autumn: " + StudentList.FindAll(x => x.Season() == "Autumn").Count());
+            Console.WriteLine("Students returning errors: " + StudentList.FindAll(x => x.Season() == "Error").Count());
         }
     }
 }
