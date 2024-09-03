@@ -15,12 +15,12 @@ namespace ClassRoomNet60
         public Student(string name, int birthmonth, int birthday)
         {
             Name = name;
-            if (birthmonth > 0 && birthmonth < 13)
+            if (birthmonth > 0 && birthmonth <= 12)
             {
                 BirthMonth = birthmonth;
             } else
             {
-                throw new ArgumentOutOfRangeException("birthmonth", "Birthmonth must be between 1 and 12");
+                throw new ArgumentException("Birthmonth must be between 1 and 12", "birthmonth");
             }
 
             Birthday = birthday;
